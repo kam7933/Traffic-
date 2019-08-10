@@ -1,11 +1,15 @@
 #map {
-    height: 100%;
-  }
-  html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
+  height: 500px;
+  width:1000px;
+  margin:0 auto;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+ 
+}
+
 
   .dropbtn{
     /* possibly a better color background-color:#3498 */
