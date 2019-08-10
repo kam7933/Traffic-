@@ -1,13 +1,14 @@
 #map {
+
     height: 100%;
-  }
-  html, body {
+}
+html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-  }
+}
 
-  .dropbtn{
+.dropbtn{
     /* possibly a better color background-color:#3498 */
     background-color:#3498DB;
     color:white;
@@ -15,7 +16,7 @@
     font-size:16px;
     border:none;
     cursor:pointer;
-  }
+}
 
 .dropbtn:hover, .dropbtn:focus{
   background-color:#2980B9;

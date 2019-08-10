@@ -13,12 +13,14 @@ var firebaseConfig = {
   let database = firebase.database();
   console.log(database);
 
-  function myFunction(){
-    document. getElementById("myDropdown").classList.toggle("show");
+  // function myFunction(){
+  //   document. getElementById("myDropdown").classList.("show");
 
-  }
+  // }
 
   window.onclick = function(event) {
+    // myFunction();
+    console.log('click')
     if (!event.target.matches('dropbtn')) {
       let dropdowns = document.getElementsByClassName("dropdown-content");
       let index;
@@ -26,6 +28,9 @@ var firebaseConfig = {
         let openDropdown= dropdowns[index];
         if (openDropdown.classList.contains('show')) {
           openDropdown.classList.remove('show');
+        }
+        else{
+          openDropdown.classList.toggle('show');
         }
       }
     }
