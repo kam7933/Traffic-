@@ -13,6 +13,23 @@ var firebaseConfig = {
   let database = firebase.database();
   console.log(database);
 
+  function myFunction(){
+    document. getElementById("myDropdown").classList.toggle("show");
+
+  }
+
+  window.onclick = function(event) {
+    if (!event.target.matches('dropbtn')) {
+      let dropdowns = document.getElementsByClassName("dropdown-content");
+      let index;
+      for (index = 0; index < dropdowns.length;index++){
+        let openDropdown= dropdowns[index];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
   let signUp = document.getElementById("sign-up");
   let login = document.getElementById("login");
   let hideable = document.getElementsByClassName("hideable");
