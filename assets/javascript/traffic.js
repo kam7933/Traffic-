@@ -17,13 +17,15 @@ var firebaseConfig = {
   //   document. getElementById("myDropdown").classList.("show");
 
   // }
+  let dropDown = document.getElementById("drop-btn");
 
-  window.onclick = function(event) {
+  dropDown.addEventListener("click", function(event) {
     // myFunction();
     console.log('click')
-    if (!event.target.matches('dropbtn')) {
+    // if (!event.target.matches('dropbtn')) {
       let dropdowns = document.getElementsByClassName("dropdown-content");
       let index;
+      console.log(`drop down number: ${dropDown}`)
       for (index = 0; index < dropdowns.length;index++){
         let openDropdown= dropdowns[index];
         if (openDropdown.classList.contains('show')) {
@@ -33,8 +35,8 @@ var firebaseConfig = {
           openDropdown.classList.toggle('show');
         }
       }
-    }
-  }
+    // }
+  });
   let signUp = document.getElementById("sign-up");
   let login = document.getElementById("login");
   let hideable = document.getElementsByClassName("hideable");

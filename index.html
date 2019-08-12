@@ -10,22 +10,21 @@
 </head>
 <body>
     <header>
-        <h1>Traffic Stats</h1>
+        <h1>Grid-Un-lock</h1>
     </header>
 
     <section id="popout"></section>
     <main id="the-baudy">
-        <nav class="hideable">
-            <section id ="number-box">
-            <select id="num-choice">
+        <nav class="hideable nav-box">
+            <!-- <select id="num-choice">
                 <option value ="2">2</option>
                 <option value ="5">5</option>
                 <option value ="10">10</option>
                 <option value = "15">15</option>
-            </select>
-            <br><br>
+            </select> -->
+            <!-- <br><br> -->
             <section class="dropdown">
-               <button  class="dropbtn">Dropdown</button>
+               <button  id="drop-btn">| | |</button>
                 <section id="myDropdown" class="dropdown-content">
                   <a id="login">Login</a> 
                   <a id="sign-up">Sign Up</a> 
@@ -42,13 +41,18 @@
         </style>
         <div class="hideable" id="map"></div>
     </main>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <script type="text/javascript" src="assets/javascript/keys.js"></script>
     <!-- Initialize Firebase -->
     <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-database.js"></script>   
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBn4ZiSpEa0F0Iwac19H6jvtaT8XhK7wwU&callback=initMap"async defer></script>
-    <script type="text/javascript" src="assets/javascript/keys.js"></script>
+    <!-- maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlf8s56QLqzmNNuOt45DlpfMJ76k-ZEjk&callback=initMap"async defer></script>
     <script type="text/javascript" src="assets/javascript/map.js"></script>
+    <!-- texts -->
+    <script type="text/javascript" src="assets/javascript/send_sms.js"></script>
+    <!-- maine js -->
     <script type="text/javascript" src="assets/javascript/traffic.js"></script>
   </body>
 
