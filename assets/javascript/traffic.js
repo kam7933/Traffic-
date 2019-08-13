@@ -1,5 +1,5 @@
 var firebaseConfig = {
-    apiKey: fbKey,
+    //apiKey: fbKey,
     authDomain: "gridunlocked-75803.firebaseapp.com",
     databaseURL: "https://gridunlocked-75803.firebaseio.com",
     projectId: "gridunlocked-75803",
@@ -13,6 +13,7 @@ var firebaseConfig = {
   let database = firebase.database();
   console.log(database);
 
+ 
   // function myFunction(){
   //   document. getElementById("myDropdown").classList.("show");
 
@@ -41,11 +42,23 @@ var firebaseConfig = {
   let login = document.getElementById("login");
   let hideable = document.getElementsByClassName("hideable");
 
-  let sendAText = function(){
-    fetch("http://localhost:3000/api/+15102902391/").then(function(res){
+  let sendAText = function(phone){
+    fetch(`http://localhost:3000/api/+1${phone}/`).then(function(res){
       console.log("Testing....");
     })
   }
+
+  $(document).ready(function(){
+   
+    $("#submit").on("click", function(event){
+      event.preventDefault()
+      let phone = $("#phone").val();
+      console.log(phone)
+      sendAText(phone)
+      
+    }) 
+  })
+
   // sendAText();
 
 
@@ -96,4 +109,8 @@ var firebaseConfig = {
     $(".pw-box").append(`<input type="password" class="form-controller" id="pw-input">`)
     $(".form").append(`<p type="submit"  id="submit-li-btn" >Submit</p>`);
   });
+
+
+
+
 
