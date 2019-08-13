@@ -2,9 +2,9 @@
 // Your Account Sid and Auth Token from twilio.com/console
 // DANGER! This is insecure. See http://twil.io/secure
 
-let twilKey = "AC01f823004c983f60066a619660a53054";
-let ATKEY = "6613e8a476ac04e5c62b22ba2bc0db6e";
-let PORT = 3000;
+let twilKey = "your key here";
+let ATKEY = "your AT number here";
+let PORT = "your port here";
 
 const express = require('express');
 const accountSid = twilKey;
@@ -24,7 +24,7 @@ app.get('/api/:phonenumber', function (req, res) {
    client.messages
    .create({
       body: 'This is the ship that made the Kessel Run in fourteen parsecs?',
-      from: '+15107267903',
+      from: '+your twilio number here',
       to: phonenumber
     })
    .then(message => console.log(message.sid));
