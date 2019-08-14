@@ -1,5 +1,6 @@
 # Traffic-
 
+
 -Make a web based application that notifies user of live traffic alerts to phone via text/ alerts within a specified radius. 
 
 -Bonus: 
@@ -8,4 +9,5 @@
 
 need to finish login and log out screen.
 
-
+*still need to include add a choose construction insident, event and congestion buttons 
+as  well an option of how many results we want texted to us.

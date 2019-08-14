@@ -1,5 +1,5 @@
 var firebaseConfig = {
-    //apiKey: fbKey,
+    apiKey: fbKey,
     authDomain: "gridunlocked-75803.firebaseapp.com",
     databaseURL: "https://gridunlocked-75803.firebaseio.com",
     projectId: "gridunlocked-75803",
@@ -11,8 +11,13 @@ var firebaseConfig = {
   firebase.initializeApp(firebaseConfig);
 
   let database = firebase.database();
-  console.log(database);
+  // console.log(database);
 
+  let constrc = true;
+  let incidents = true;
+  let otherEvents = true;
+  let conjest = true;
+ 
  
   // function myFunction(){
   //   document. getElementById("myDropdown").classList.("show");
@@ -42,19 +47,40 @@ var firebaseConfig = {
   let login = document.getElementById("login");
   let hideable = document.getElementsByClassName("hideable");
 
-  let sendAText = function(phone){
-    fetch(`http://localhost:3000/api/+1${phone}/`).then(function(res){
+  let sendAText = function(phone, result){
+
+    fetch(`http://localhost:3000/api/+1${phone}/${result}`, { mode: 'no-cors' }).then(function(res){
+
       console.log("Testing....");
     })
   }
+  // `http://localhost:3000/api/+1${phone}/con/construction%2/
 
   $(document).ready(function(){
    
+    
+
+  
     $("#submit").on("click", function(event){
       event.preventDefault()
+      let queryUrl = `https://www.mapquestapi.com/traffic/v2/incidents?&outFormat=json&boundingBox=37.88487982416931%2C-122.20650672912599%2C37.83412393242584%2C-122.32186317443848&filters=construction%2Cincidents%2Cevent%2Ccongestion&key=${mqKey}`
+
+      fetch(queryUrl).then(function(response){
+        console.log(`response: ${response}`)
+        return response.json();
+      }).then(function(res){
+        let resLength = res.incidents.length;
+        console.log(resLength)
+        console.log(`res: ${JSON.stringify(res)}`);
+        console.log(res.incidents[0].shortDesc)
+        result = res.incidents[0].shortDesc;
+        console.log(result)
+      
+        
       let phone = $("#phone").val();
       console.log(phone)
-      sendAText(phone)
+      sendAText(phone, result)
+      })
       
     }) 
   })
