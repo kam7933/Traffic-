@@ -17,30 +17,28 @@
     </header>
 <section>
  
-        <label for ="phone">Enter Your Phone Number:</label> 
-        <input type="text" id="phone" name="phone" >
-       
-       
-       
-       
-         <small>Format:123-456-7890</small>
-         <br>
-         <button type="submit"  id="submit" value="Submit">Submit</button>
-       
-
- 
- 
 </section>
     <section id="popout"></section>
     <main id="the-baudy">
         <nav class="hideable nav-box">
-            <!-- <select id="num-choice">
-                <option value ="2">2</option>
-                <option value ="5">5</option>
-                <option value ="10">10</option>
-                <option value = "15">15</option>
-            </select> -->
-            <!-- <br><br> -->
+            <section>
+                <label for ="phone">Enter Your Phone Number:</label> 
+                <input type="text" id="phone" name="phone" >
+                <small>Format:123-456-7890</small>
+                <br>
+                <button type="submit"  id="submit" value="Submit">Submit</button>
+            </section>
+            <section id="big-btn-box">
+              <section id="button-box">
+                <button id= "construction">Construction</button>
+                <button id= "incidents">incidents</button>
+                <button id= "Events">Events</button>
+                <button id= "congestion">congestion</button>
+              </section>
+           </section>
+           <input type="number">
+
+
             <section class="dropdown">
                <button  id="drop-btn">| | |</button>
                 <section id="myDropdown" class="dropdown-content">
@@ -92,10 +90,7 @@
     <!-- Initialize Firebase -->
     <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-database.js"></script>   
-
-    <script src="http://www.mapquestapi.com/traffic/v2/incidents"></script>
-    <script type="text/javascript" src="assets/javascript/keys.js"></script>
-  <script type="text/javascript" src="assets/javascript/map.js"></script>
+    <script type="text/javascript" src="assets/javascript/map.js"></script>
     <!-- maine js -->
     <script type="text/javascript" src="assets/javascript/traffic.js"></script>
   </body>
