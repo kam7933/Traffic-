@@ -13,6 +13,10 @@ var firebaseConfig = {
   let database = firebase.database();
   // console.log(database);
 
+  let phoneMaker = function(){
+    
+  }
+
   let constrc = true;
   let incidents = true;
   let otherEvents = true;
