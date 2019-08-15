@@ -63,7 +63,7 @@ var firebaseConfig = {
   
     $("#submit").on("click", function(event){
       event.preventDefault()
-      let queryUrl = `https://www.mapquestapi.com/traffic/v2/incidents?&outFormat=json&boundingBox=37.88487982416931%2C-122.20650672912599%2C37.83412393242584%2C-122.32186317443848&filters=construction%2Cincidents%2Cevent%2Ccongestion&key=${mqKey}`
+      let queryUrl = `https://www.mapquestapi.com/traffic/v2/incidents?&outFormat=json&boundingBox=${boundingBox}&filters=construction%2Cincidents%2Cevent%2Ccongestion&key=${mqKey}`
 
       fetch(queryUrl).then(function(response){
         console.log(`response: ${response}`)
