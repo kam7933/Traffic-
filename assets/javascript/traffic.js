@@ -119,6 +119,7 @@ var firebaseConfig = {
     $(".form").append(`<p type="submit"  id="submit-su-btn">Submit</p>`);
     
   });
+  
   login.addEventListener("click", function(){
     $(".hideable").hide();
     // each one needs to build a page and have all of the needed function to operate the pa
