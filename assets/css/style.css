@@ -8,10 +8,18 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  background-color:#C0C0C0;
+  color:#000080;
  
 }
 .nav-box{
-  display: flex;
+  display: inline-block;
+  padding-left: 15px;
+  margin-left: 15px;
+  line-height: 18px;
+  color: red;
+  text-decoration: none;
+  border-left: 1px solid #efefef;
   flex-direction: row;
   justify-content: flex-start;
 }
