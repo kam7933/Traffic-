@@ -20,5 +20,6 @@ var locate = function locate() {
     } else {
         status.textContent = 'Locating…';
         navigator.geolocation.getCurrentPosition(success, error);
-    }th
-}
+    }
+};
+locate();
