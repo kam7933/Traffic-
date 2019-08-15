@@ -1,98 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>GridUnlock</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/resets.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
-    <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"/>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>GridUnlock</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/resets.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css" />
+
 </head>
+
 <body>
-    <header>
-        <h1>Grid-Un-lock</h1>
-    </header>
-<section>
- 
-</section>
-    <section id="popout"></section>
-    <main id="the-baudy">
-        <nav class="hideable nav-box">
-            <section>
-                <label for ="phone">Enter Your Phone Number:</label> 
-                <input type="text" id="phone" name="phone" >
-                <small>Format:123-456-7890</small>
-                <br>
-                <button type="submit"  id="submit" value="Submit">Submit</button>
-            </section>
-            <section id="big-btn-box">
-              <section id="button-box">
-                <button id= "construction">Construction</button>
-                <button id= "incidents">incidents</button>
-                <button id= "Events">Events</button>
-                <button id= "congestion">congestion</button>
-              </section>
-           </section>
-           <input type="number">
+  <header>
+    <h1>Grid-Un-lock</h1>
+  </header>
+  <section>
+
+  </section>
+  <section id="popout"></section>
+  <main id="the-baudy">
+    <nav class="hideable nav-box">
+      <section>
+        <label for="phone">Enter Your Phone Number:</label>
+        <input type="text" id="phone" name="phone">
+        <small>Format:123-456-7890</small>
+        <br>
+        <button type="submit" id="submit" value="Submit">Submit</button>
+      </section>
+      <section id="big-btn-box">
+        <section id="button-box">
+          <button id="construction">Construction</button>
+          <button id="incidents">incidents</button>
+          <button id="Events">Events</button>
+          <button id="congestion">congestion</button>
+        </section>
+      </section>
+      <input type="number">
 
 
-            <section class="dropdown">
-               <button  id="drop-btn">| | |</button>
-                <section id="myDropdown" class="dropdown-content">
-                  <a id="login">Login</a> 
-                  <a id="sign-up">Sign Up</a> 
-                  <a href="#">Home</a> 
-                  <a href="">Traffic</a>
-                  <a href="">Status</a>
-                  <a href="">Location</a>         
-                </section>
-            </section>
-      </nav>
-       <!-- onclick="myFunction ()" -->
+      <section class="dropdown">
+        <button id="drop-btn">| | |</button>
+        <section id="myDropdown" class="dropdown-content">
+          <a id="login">Login</a>
+          <a id="sign-up">Sign Up</a>
+          <a href="#">Home</a>
+          <a href="">Traffic</a>
+          <a href="">Status</a>
+          <a href="">Location</a>
+        </section>
+      </section>
+    </nav>
+    <!-- onclick="myFunction ()" -->
 
-       <html>
-  <head>
- 
+
+
 
     <script type="text/javascript">
-      window.onload = function() {
-        L.mapquest.key = mqKey;
-
-        var map = L.mapquest.map('map', {
-          center: [37.866791, -122.303538],
-          layers: L.mapquest.tileLayer('map'),
-          zoom: 11
-        });
-
-        map.addControl(L.mapquest.control());
-      }
+      
     </script>
-  </head>
 
-  <body style="border: 0; margin: 0;">
-    <div id="map" style="width: 100%; height: 600px;"></div>
-  </body>
-</html>
+    <div id="map" style="width: 100%; height: 530px;"></div>
+    <!-- <div class="hideable" id="map"></div> -->
+  </main>
 
-
-        <style>
-    
-        </style>
-        <div id="map" style="width: 100%; height: 530px;"></div>
-        <!-- <div class="hideable" id="map"></div> -->
-    </main>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
-    <script type="text/javascript" src="assets/javascript/keys.js"></script>
-    <!-- Initialize Firebase -->
-    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-database.js"></script>   
-    <!-- maine js -->
-    <script src="assets/javascript/locate.js"></script>
-    <script type="text/javascript" src="assets/javascript/traffic.js"></script>
-  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/javascript/keys.js"></script>
+  <!-- Initialize Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-database.js"></script>
+  <!-- maine js -->
+  <script src="assets/javascript/locate.js"></script>
+  <script type="text/javascript" src="assets/javascript/traffic.js"></script>
+</body>
 
 </html>
