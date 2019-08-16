@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -48,20 +49,12 @@
     <script type="text/javascript">
       window.onload = function() {
         L.mapquest.key = mqKey;
-
-        var map = L.mapquest.map('map', {
-          center: [37.866791, -122.303538],
-          layers: L.mapquest.tileLayer('map'),
-          zoom: 11
-        });
-
         map.addControl(L.mapquest.control());
       }
     </script>
 
     <div id="map" style="width: 98%; height: 530px;"></div>
 
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
     <script type="text/javascript" src="assets/javascript/keys.js"></script>
     <!-- Initialize Firebase -->

@@ -8,8 +8,10 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+
   background-color:rgb(98, 98, 98);
   color: rgb(255, 0, 0);
+
 }
 #number-input{
   height: 18px;
@@ -27,8 +29,8 @@ html, body {
   padding: 15px;
   margin: 15px;
   line-height: 18px;
-
   text-decoration: none;
+
 }
 h1{
   font-size: 30px;

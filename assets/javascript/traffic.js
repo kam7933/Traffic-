@@ -1,4 +1,5 @@
 var firebaseConfig = {
+
   apiKey: fbKey,
   authDomain: "gridunlocked-75803.firebaseapp.com",
   databaseURL: "https://gridunlocked-75803.firebaseio.com",
@@ -43,6 +44,7 @@ let sendAText = function(phone, result){
   fetch(`http://localhost:3000/api/+1${phone}/${result}`, { mode: 'no-cors' }).then(function(res){
     console.log(`res:${res}`)
     console.log("Testing....");
+
   });
 };
 
