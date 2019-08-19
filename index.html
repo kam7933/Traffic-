@@ -6,6 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>GridUnlock</title>
+      <link href="https://fonts.googleapis.com/css?family=Racing+Sans+One&display=swap" rel="stylesheet">
       <link rel="stylesheet" type="text/css" href="assets/css/resets.css">
       <link rel="stylesheet" type="text/css" href="assets/css/style.css">
       <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
@@ -15,22 +16,23 @@
   <body>
     <main id="the-baudy">
       <form class="hideable nav-box">
-        <h3>Get text about incidents around you:</h3>
-        <div id="input-box">
-          <label for ="phone">Enter Your Phone Number:</label> 
+        <h1 class="t-shadow nav-marg">Grid-Un-lock</h1>
+        <h3 class="t-shadow nav-marg">Get text about incidents around you:</h3>
+        <div id="input-box" class="nav-marg">
+          <h3 for ="phone" class="t-shadow">Enter Your Phone Number:</h3> 
           <input type="text" id="phone" name="phone" value="1234567890">
         </div>
         
-        <section id="btn-box">
-          <h3>Incidents Type:</h3>
+        <section id="btn-box" class="nav-marg">
+          <h3 class="t-shadow">Incidents Type:</h3>
           <p class="on-btn" id= "construction" value="unactive">Construction</p>
           <p class="on-btn" id= "Events">Events</p>
           <p class="on-btn" id= "congestion">congestion</p>
         </section>
-        <h3># of texts to send:</h3>
+        <h3 class="t-shadow nav-marg"># of texts to send:</h3>
         <input type="number" min=1 max=3 class="form-controler" id="number-input" value="1">
-        <button type="submit"  id="submit" value="Submit">Submit</button>
-        <h1>Grid-Un-lock</h1>
+        <button type="submit"  id="submit" value="Submit" class="nav-marg">Submit</button>
+        
         <!-- <section class="dropdown">
             <button  id="drop-btn">| | |</button>
             <section id="myDropdown" class="dropdown-content">
@@ -44,7 +46,7 @@
         </section> -->
       </form>
     </main>
-    <h3>Look at console log for full traffic report.</h3>
+    <h3 class="t-shadow report">Look at console log for full traffic report.</h3>
     
     <script type="text/javascript">
       window.onload = function() {
